@@ -153,13 +153,62 @@
 
 
 
+  .cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 18px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  text-align: center;
+}
+.cookie-banner.show {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cookie-banner button {
+  margin: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+#cookie-accept {
+  background: #28a745;
+  color: #fff;
+}
+#cookie-decline {
+  background: #dc3545;
+  color: #fff;
+}
+
+
+
+
+
 
 
 </style>
 </head>
 <body>
 
-
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    Diese Website verwendet Cookies, um bestmögliche Funktionalität zu bieten
+    und ggf. Dienste wie Google Maps oder externe Formulare erst nach Zustimmung zu laden.
+    Mehr dazu in unserer <a href="datenschutz.html" style="color: #fff; text-decoration: underline;">Datenschutzerklärung</a>.
+  </p>
+  <button id="cookie-accept">Akzeptieren</button>
+  <button id="cookie-decline">Ablehnen</button>
+</div>
 
 
 <!-- NAV -->
@@ -325,6 +374,7 @@
 </footer>
 
 <script>
+  
 // ── LANGUAGE SWITCHER ──────────────────────────────────────
 let currentLang = 'de';
 
@@ -395,5 +445,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 </script>
+<script src="main.js"></script>
 </body>
 </html>
