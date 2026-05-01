@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta name="description" content="Hattat Webdesign & Consulting – Professionelle Websites, Apps und SEO für Restaurants, Ärzte, Hotels und mehr.">
+<title>Hattat Webdesign & Consulting</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+  :root{--gold:#C9A84C;--gold-light:#e2c97e;--dark:#0a0a0a;--dark2:#111111;--dark3:#1a1a1a;--silver:#c0c0c0;--white:#f5f5f5;--text-muted:#888;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Montserrat',sans-serif;background:var(--dark);color:var(--white);overflow-x:hidden;}
+
+  /* LANG SWITCHER */
+  .lang-switch{position:fixed;top:80px;right:24px;z-index:200;display:flex;gap: 20px;}
+  .lang-btn{background:transparent;border:1px solid rgba(201,168,76,0.35);color:var(--gold);font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;padding:7px 14px;border-radius:2px;cursor:pointer;transition:background .3s,color .3s;position: relative;}
+  .lang-btn.active,.lang-btn:hover{background:var(--gold);color:var(--dark);}
+
+  /* NAV */
+  nav{position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:rgba(10,10,10,0.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,168,76,0.15);}
+  .nav-brand{display:flex;flex-direction:column;}
+  .nav-name{font-size:13px;font-weight:700;letter-spacing:4px;color:var(--white);}
+  .nav-sub{font-size:8px;font-weight:300;letter-spacing:3px;color:var(--gold);}
+  .nav-links{display:flex;gap:32px;list-style:none;}
+  .nav-links a{color:var(--silver);font-size:11px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;transition:color .3s;}
+  .nav-links a:hover{color:var(--gold);}
+  .nav-cta{border:1px solid var(--gold)!important;color:var(--gold)!important;padding:10px 22px;border-radius:2px;transition:background .3s,color .3s!important;}
+  .nav-cta:hover{background:var(--gold)!important;color:var(--dark)!important;}
+
+  /* HERO */
+  #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:140px 40px 80px;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(201,168,76,0.07) 0%,transparent 70%);}
+  .hero-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.2),transparent);width:100%;}
+  .hero-line:nth-child(1){top:25%}.hero-line:nth-child(2){top:75%}
+  .hero-content{position:relative;z-index:1;max-width:860px;}
+  .hero-badge{display:inline-block;border:1px solid rgba(201,168,76,0.4);color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;padding:8px 20px;border-radius:2px;margin-bottom:40px;}
+  .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,7vw,80px);font-weight:300;line-height:1.1;margin-bottom:12px;}
+  .hero-title .gold{color:var(--gold);font-weight:600;}
+  .hero-title .silver{background:linear-gradient(135deg,#fff,#aaa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .hero-sub{font-size:13px;font-weight:300;letter-spacing:2px;color:var(--text-muted);margin-bottom:28px;text-transform:uppercase;}
+  .hero-desc{font-size:15px;font-weight:300;line-height:1.8;color:#aaa;max-width:580px;margin:0 auto 50px;}
+  .hero-desc span{color:var(--gold);font-weight:500;}
+  .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn-primary{background:linear-gradient(135deg,var(--gold),#a8862a);color:var(--dark);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:16px 36px;border:none;border-radius:2px;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(201,168,76,.3);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.4);}
+  .btn-secondary{background:transparent;color:var(--white);font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;padding:16px 36px;border:1px solid rgba(255,255,255,.2);border-radius:2px;cursor:pointer;text-decoration:none;transition:border-color .3s,color .3s;}
+  .btn-secondary:hover{border-color:var(--gold);color:var(--gold);}
+  .hero-free{margin-top:30px;font-size:11px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;}
+  .hero-free::before{content:"✦ "}.hero-free::after{content:" ✦"}
+
+  /* STATS */
+  .stats{display:flex;justify-content:center;border-top:1px solid rgba(201,168,76,.15);border-bottom:1px solid rgba(201,168,76,.15);background:var(--dark2);}
+  .stat{flex:1;max-width:220px;text-align:center;padding:40px 20px;border-right:1px solid rgba(201,168,76,.1);}
+  .stat:last-child{border-right:none;}
+  .stat-num{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:600;color:var(--gold);line-height:1;}
+  .stat-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-top:8px;}
+
+  /* SECTIONS */
+  section{padding:100px 60px;}
+  .section-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:12px;}
+  .section-tag::before{content:'';display:inline-block;width:30px;height:1px;background:var(--gold);}
+  .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,50px);font-weight:300;line-height:1.2;margin-bottom:16px;}
+  .section-title .gold{color:var(--gold);}
+  .section-desc{font-size:14px;font-weight:300;line-height:1.9;color:#999;max-width:500px;}
+  .gold-divider{width:60px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:20px 0;}
+
+  /* SERVICES */
+  #leistungen{background:var(--dark2);}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;margin-top:60px;}
+  .service-card{background:var(--dark3);padding:44px 36px;position:relative;overflow:hidden;transition:background .3s;}
+  .service-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s;}
+  .service-card:hover{background:#202020;}
+  .service-card:hover::before{opacity:1;}
+  .service-icon{font-size:28px;margin-bottom:20px;}
+  .service-num{position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:rgba(201,168,76,.06);line-height:1;}
+  .service-title{font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;color:var(--white);}
+  .service-desc{font-size:13px;font-weight:300;line-height:1.8;color:#888;}
+  .service-tag{display:inline-block;margin-top:20px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.3);padding:5px 12px;border-radius:1px;}
+
+  /* ZIELGRUPPEN */
+  #zielgruppen{background:var(--dark);}
+  .ziel-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px;}
+  .ziel-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .ziel-card{background:var(--dark3);border:1px solid rgba(255,255,255,.04);padding:28px 24px;border-radius:2px;transition:border-color .3s,transform .3s;}
+  .ziel-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-4px);}
+  .ziel-icon{font-size:28px;margin-bottom:12px;}
+  .ziel-name{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:6px;}
+  .ziel-desc{font-size:11px;font-weight:300;line-height:1.7;color:#777;}
+  .ziel-features{list-style:none;margin-top:28px;}
+  .ziel-features li{font-size:13px;font-weight:300;color:#999;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;align-items:center;gap:12px;}
+  .ziel-features li::before{content:'✦';color:var(--gold);font-size:8px;}
+
+  /* USPs */
+  #vorteile{background:var(--dark2);}
+  .usp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;}
+  .usp-card{background:var(--dark3);padding:44px 32px;text-align:center;}
+  .usp-icon{font-size:32px;margin-bottom:20px;}
+  .usp-title{font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;color:var(--white);}
+  .usp-desc{font-size:12px;font-weight:300;line-height:1.8;color:#777;}
+
+  /* FREE BANNER */
+  .free-banner{background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.25);border-radius:4px;padding:40px 60px;text-align:center;margin:0 60px;}
+  .free-banner h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;margin-bottom:12px;}
+  .free-banner h3 span{color:var(--gold);}
+  .free-banner p{font-size:13px;font-weight:300;color:#999;margin-bottom:28px;}
+
+  /* KONTAKT */
+  #kontakt{background:var(--dark);}
+  .kontakt-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:60px;}
+  .kontakt-info h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-bottom:20px;}
+  .kontakt-info p{font-size:13px;font-weight:300;line-height:1.9;color:#888;margin-bottom:32px;}
+  .kontakt-detail{display:flex;align-items:center;gap:14px;margin-bottom:16px;font-size:13px;color:#999;}
+  .kontakt-detail span:first-child{color:var(--gold);font-size:16px;width:20px;}
+  .form-group{margin-bottom:18px;}
+  .form-group input,.form-group textarea,.form-group select{width:100%;background:var(--dark3);border:1px solid rgba(255,255,255,.08);color:var(--white);font-family:'Montserrat',sans-serif;font-size:12px;font-weight:300;padding:16px 18px;border-radius:2px;outline:none;transition:border-color .3s;}
+  .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold);}
+  .form-group select option{background:var(--dark3);}
+  .form-group textarea{height:120px;resize:none;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .free-note{font-size:11px;letter-spacing:1px;color:var(--gold);margin-bottom:16px;padding:12px 16px;background:rgba(201,168,76,.06);border-left:2px solid var(--gold);border-radius:1px;}
+
+  /* FOOTER */
+  footer{background:#070707;border-top:1px solid rgba(201,168,76,.12);padding:40px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .footer-brand{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--text-muted);}
+  .footer-brand span{color:var(--gold);}
+  .footer-links{display:flex;gap:28px;}
+  .footer-links a{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .3s;}
+  .footer-links a:hover{color:var(--gold);}
+  .footer-copy{font-size:10px;color:#444;letter-spacing:1px;}
+
+  /* ANIMATIONS */
+  .fade-in{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}
+  .fade-in.visible{opacity:1;transform:translateY(0);}
+
+  @media(max-width:768px){
+    nav{padding:16px 24px;}
+    .nav-links{display:none;}
+    section{padding:70px 24px;}
+    .ziel-layout,.kontakt-layout{grid-template-columns:1fr;gap:40px;}
+    .usp-grid{grid-template-columns:1fr;}
+    .free-banner{margin:0 24px;padding:30px 24px;}
+    footer{padding:30px 24px;flex-direction:column;text-align:center;}
+    .stats{flex-wrap:wrap;}
+    .stat{min-width:45%;border-right:none;border-bottom:1px solid rgba(201,168,76,.1);}
+    .lang-switch{top:16px;right:16px;}
+  }
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-name">HATTAT</div>
+    <div class="nav-sub" data-de="Webdesign & Consulting" data-tr="Web Tasarım & Danışmanlık">Webdesign & Consulting</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#leistungen" data-de="Leistungen" data-tr="Hizmetler">Leistungen</a></li>
+    <li><a href="#vorteile" data-de="Vorteile" data-tr="Avantajlar">Vorteile</a></li>
+    
+  </ul>
+</nav>
+
+<!-- LANG SWITCHER -->
+<div class="lang-switch">
+  <button class="lang-btn active" onclick="setLang('de')">DE</button>
+  <button class="lang-btn" onclick="setLang('tr')">TR</button>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div><div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-de="Digitales Wachstum · Professionell & Messbar" data-tr="Dijital Büyüme · Profesyonel & Ölçülebilir">Digitales Wachstum · Professionell & Messbar</div>
+    <h1 class="hero-title">
+      <span class="silver" data-de="Ihre digitale" data-tr="Dijital">Ihre digitale</span><br>
+      <span class="gold" data-de="Präsenz. Perfekt." data-tr="Varlığınız. Mükemmel.">Präsenz. Perfekt.</span>
+    </h1>
+    <p class="hero-sub" data-de="Webdesign · Entwicklung · SEO · Beratung" data-tr="Web Tasarım · Geliştirme · SEO · Danışmanlık">Webdesign · Entwicklung · SEO · Beratung</p>
+    <p class="hero-desc" data-de="Wir gestalten Websites und Applikationen, die nicht nur beeindrucken – sondern <span>gefunden werden</span>. Top-Rankings auf Google. Maßgeschneidert für jede Branche." data-tr="Sadece etkileyici değil – <span>bulunan</span> web siteleri ve uygulamalar tasarlıyoruz. Google'da üst sıralarda. Her sektöre özel.">Wir gestalten Websites und Applikationen, die nicht nur beeindrucken – sondern <span>gefunden werden</span>. Top-Rankings auf Google. Maßgeschneidert für jede Branche.</p>
+    <div class="hero-btns">
+      <a href="#kontakt" class="btn-primary" data-de="Jetzt anfragen" data-tr="Hemen Teklif Alın">Jetzt anfragen</a>
+      <a href="#leistungen" class="btn-secondary" data-de="Leistungen ansehen" data-tr="Hizmetleri Gör">Leistungen ansehen</a>
+    </div>
+    <p class="hero-free" data-de="Erste Analyse & Beratung kostenlos" data-tr="İlk Analiz & Danışmanlık Ücretsiz">Erste Analyse & Beratung kostenlos</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat fade-in"><div class="stat-num">100%</div><div class="stat-label" data-de="Individuelle Lösungen" data-tr="Bireysel Çözümler">Individuelle Lösungen</div></div>
+  <div class="stat fade-in"><div class="stat-num">#1</div><div class="stat-label" data-de="Google-Fokus" data-tr="Google Odaklı">Google-Fokus</div></div>
+  <div class="stat fade-in"><div class="stat-num">4+</div><div class="stat-label" data-de="Branchen" data-tr="Sektörler">Branchen</div></div>
+  <div class="stat fade-in"><div class="stat-num">0€</div><div class="stat-label" data-de="Erstberatung" data-tr="İlk Danışmanlık">Erstberatung</div></div>
+</div>
+
+<!-- LEISTUNGEN -->
+<section id="leistungen">
+  <div class="section-tag" data-de="Leistungen" data-tr="Hizmetler">Leistungen</div>
+  <h2 class="section-title" data-de="Was wir für Sie <span class='gold'>leisten</span>" data-tr="Sizin için neler <span class='gold'>yapıyoruz</span>">Was wir für Sie <span class="gold">leisten</span></h2>
+  <div class="gold-divider"></div>
+  <p class="section-desc" data-de="Von der ersten Idee bis zum fertigen Produkt – wir begleiten Ihr digitales Wachstum mit Kompetenz und Leidenschaft." data-tr="İlk fikirden nihai ürüne – dijital büyümenizde uzmanlık ve tutkuyla yanınızdayız.">Von der ersten Idee bis zum fertigen Produkt – wir begleiten Ihr digitales Wachstum mit Kompetenz und Leidenschaft.</p>
+  <div class="services-grid">
+    <div class="service-card fade-in">
+      <div class="service-num">01</div><div class="service-icon">🌐</div>
+      <div class="service-title" data-de="Webdesign" data-tr="Web Tasarım">Webdesign</div>
+      <p class="service-desc" data-de="Moderne, responsive Websites die Ihre Marke perfekt repräsentieren – gestaltet für maximale Wirkung und Benutzerfreundlichkeit." data-tr="Markanızı mükemmel şekilde temsil eden modern, responsive web siteleri – maksimum etki ve kullanıcı dostu tasarım.">Moderne, responsive Websites die Ihre Marke perfekt repräsentieren – gestaltet für maximale Wirkung und Benutzerfreundlichkeit.</p>
+      <span class="service-tag" data-de="Design & UX" data-tr="Tasarım & UX">Design & UX</span>
+    </div>
+    <div class="service-card fade-in">
+      <div class="service-num">02</div><div class="service-icon">⚙️</div>
+      <div class="service-title" data-de="App-Entwicklung" data-tr="Uygulama Geliştirme">App-Entwicklung</div>
+      <p class="service-desc" data-de="Maßgeschneiderte Web-Applikationen für jede Branche – skalierbar, sicher und genau auf Ihre Prozesse zugeschnitten." data-tr="Her sektöre özel web uygulamaları – ölçeklenebilir, güvenli ve süreçlerinize tam uyarlanmış.">Maßgeschneiderte Web-Applikationen für jede Branche – skalierbar, sicher und genau auf Ihre Prozesse zugeschnitten.</p>
+      <span class="service-tag" data-de="Development" data-tr="Geliştirme">Development</span>
+    </div>
+    <div class="service-card fade-in">
+      <div class="service-num">03</div><div class="service-icon">📈</div>
+      <div class="service-title" data-de="SEO & Google" data-tr="SEO & Google">SEO & Google</div>
+      <p class="service-desc" data-de="Ihre Website weit oben bei Google & Co. Wir optimieren Ihren digitalen Auftritt für maximale Sichtbarkeit und mehr Kunden." data-tr="Web siteniz Google'da üst sıralarda. Dijital varlığınızı maksimum görünürlük ve daha fazla müşteri için optimize ediyoruz.">Ihre Website weit oben bei Google & Co. Wir optimieren Ihren digitalen Auftritt für maximale Sichtbarkeit und mehr Kunden.</p>
+      <span class="service-tag" data-de="Sichtbarkeit" data-tr="Görünürlük">Sichtbarkeit</span>
+    </div>
+    <div class="service-card fade-in">
+      <div class="service-num">04</div><div class="service-icon">💡</div>
+      <div class="service-title" data-de="Digitalberatung" data-tr="Dijital Danışmanlık">Digitalberatung</div>
+      <p class="service-desc" data-de="Strategische Beratung für Ihr digitales Wachstum. Wir analysieren, planen und setzen um – von der Strategie bis zur Umsetzung." data-tr="Dijital büyümeniz için stratejik danışmanlık. Analiz ediyor, planlıyor ve uyguluyoruz – stratejiden hayata geçirmeye kadar.">Strategische Beratung für Ihr digitales Wachstum. Wir analysieren, planen und setzen um – von der Strategie bis zur Umsetzung.</p>
+      <span class="service-tag" data-de="Strategie" data-tr="Strateji">Strategie</span>
+    </div>
+  </div>
+</section>
+
+<!-- FREE BANNER -->
+<div class="free-banner fade-in">
+  <h3 data-de="Erste Analyse & Beratung <span>kostenlos</span>" data-tr="İlk Analiz & Danışmanlık <span>Ücretsiz</span>">Erste Analyse & Beratung <span>kostenlos</span></h3>
+  <p data-de="Lernen Sie uns kennen – unverbindlich und ohne Risiko. Wir analysieren Ihren digitalen Auftritt und zeigen Ihnen konkretes Potenzial auf." data-tr="Bizi tanıyın – taahhütsüz ve risksiz. Dijital varlığınızı analiz ediyor ve somut potansiyeli ortaya koyuyoruz.">Lernen Sie uns kennen – unverbindlich und ohne Risiko. Wir analysieren Ihren digitalen Auftritt und zeigen Ihnen konkretes Potenzial auf.</p>
+  <a href="#kontakt" class="btn-primary" data-de="Kostenloses Gespräch vereinbaren" data-tr="Ücretsiz Görüşme Ayarla">Kostenloses Gespräch vereinbaren</a>
+</div>
+
+<!-- ZIELGRUPPEN -->
+<section id="zielgruppen">
+  <div class="ziel-layout">
+    <div class="ziel-grid">
+      <div class="ziel-card fade-in"><div class="ziel-icon">🍽️</div><div class="ziel-name" data-de="Restaurants" data-tr="Restoranlar">Restaurants</div><p class="ziel-desc" data-de="Online-Reservierung, Speisekarten, lokale Sichtbarkeit" data-tr="Online rezervasyon, menüler, yerel görünürlük">Online-Reservierung, Speisekarten, lokale Sichtbarkeit</p></div>
+      <div class="ziel-card fade-in"><div class="ziel-icon">🏥</div><div class="ziel-name" data-de="Ärzte" data-tr="Doktorlar">Ärzte</div><p class="ziel-desc" data-de="Terminbuchung, Praxisauftritt, Patientengewinnung" data-tr="Randevu sistemi, klinik tanıtımı, hasta kazanımı">Terminbuchung, Praxisauftritt, Patientengewinnung</p></div>
+      <div class="ziel-card fade-in"><div class="ziel-icon">🏨</div><div class="ziel-name" data-de="Hotels" data-tr="Oteller">Hotels</div><p class="ziel-desc" data-de="Buchungssysteme, Galerie, direkte Buchungen steigern" data-tr="Rezervasyon sistemleri, galeri, direkt rezervasyonları artırma">Buchungssysteme, Galerie, direkte Buchungen steigern</p></div>
+      <div class="ziel-card fade-in"><div class="ziel-icon">🛒</div><div class="ziel-name" data-de="Supermärkte" data-tr="Süpermarketler">Supermärkte</div><p class="ziel-desc" data-de="Online-Angebote, lokale Reichweite, Kundenbindung" data-tr="Online teklifler, yerel erişim, müşteri bağlılığı">Online-Angebote, lokale Reichweite, Kundenbindung</p></div>
+    </div>
+    <div class="ziel-text fade-in">
+      <div class="section-tag" data-de="Branchen" data-tr="Sektörler">Branchen</div>
+      <h2 class="section-title" data-de="Für jede <span class='gold'>Branche</span> die richtige Lösung" data-tr="Her <span class='gold'>Sektöre</span> Doğru Çözüm">Für jede <span class="gold">Branche</span> die richtige Lösung</h2>
+      <div class="gold-divider"></div>
+      <p class="section-desc" data-de="Ob Restaurant, Arztpraxis, Hotel oder Einzelhandel – wir kennen die Anforderungen Ihrer Branche und liefern maßgeschneiderte digitale Lösungen." data-tr="İster restoran, ister klinik, ister otel, ister perakende – sektörünüzün gereksinimlerini biliyoruz ve özel dijital çözümler sunuyoruz.">Ob Restaurant, Arztpraxis, Hotel oder Einzelhandel – wir kennen die Anforderungen Ihrer Branche und liefern maßgeschneiderte digitale Lösungen.</p>
+      <ul class="ziel-features">
+        <li data-de="Branchenspezifische Designs & Funktionen" data-tr="Sektöre özel tasarım ve işlevler">Branchenspezifische Designs & Funktionen</li>
+        <li data-de="Optimierung für lokale Google-Suchen" data-tr="Yerel Google aramaları için optimizasyon">Optimierung für lokale Google-Suchen</li>
+        <li data-de="Offen für weitere Branchen & Unternehmen" data-tr="Diğer sektör ve işletmelere de açık">Offen für weitere Branchen & Unternehmen</li>
+        <li data-de="Persönliche Betreuung von Anfang an" data-tr="Başından itibaren kişisel ilgi ve destek">Persönliche Betreuung von Anfang an</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VORTEILE -->
+<section id="vorteile">
+  <div style="text-align:center">
+    <div class="section-tag" style="justify-content:center" data-de="Warum Hattat" data-tr="Neden Hattat">Warum Hattat</div>
+    <h2 class="section-title" data-de="Ihr Vorteil mit <span class='gold'>uns</span>" data-tr="Bizimle <span class='gold'>avantajınız</span>">Ihr Vorteil mit <span class="gold">uns</span></h2>
+    <div class="gold-divider" style="margin:20px auto"></div>
+  </div>
+  <div class="usp-grid">
+    <div class="usp-card fade-in"><div class="usp-icon">🎯</div><div class="usp-title" data-de="Google-Fokus" data-tr="Google Odaklı">Google-Fokus</div><p class="usp-desc" data-de="Unsere Websites sind von Grund auf für Suchmaschinen optimiert. Ihre Kunden finden Sie – bevor sie Ihre Mitbewerber finden." data-tr="Web sitelerimiz temelden arama motorları için optimize edilmiştir. Müşterileriniz sizi bulur – rakiplerinizden önce.">Unsere Websites sind von Grund auf für Suchmaschinen optimiert. Ihre Kunden finden Sie – bevor sie Ihre Mitbewerber finden.</p></div>
+    <div class="usp-card fade-in"><div class="usp-icon">🤝</div><div class="usp-title" data-de="Persönlich & Direkt" data-tr="Kişisel & Doğrudan">Persönlich & Direkt</div><p class="usp-desc" data-de="Kein Callcenter. Kein Ticket-System. Sie sprechen direkt mit Ihrem Ansprechpartner – von der ersten Idee bis zum Launch." data-tr="Çağrı merkezi yok. Bilet sistemi yok. İlk fikirden lansmana kadar doğrudan muhatabınızla konuşursunuz.">Kein Callcenter. Kein Ticket-System. Sie sprechen direkt mit Ihrem Ansprechpartner – von der ersten Idee bis zum Launch.</p></div>
+    <div class="usp-card fade-in"><div class="usp-icon">⚡</div><div class="usp-title" data-de="Schnell & Zuverlässig" data-tr="Hızlı & Güvenilir">Schnell & Zuverlässig</div><p class="usp-desc" data-de="Schnelle Umsetzung ohne Qualitätsverlust. Wir halten Termine ein und liefern genau das, was vereinbart wurde." data-tr="Kaliteden ödün vermeden hızlı teslimat. Tarihlere uyar ve kararlaştırılanı tam olarak teslim ederiz.">Schnelle Umsetzung ohne Qualitätsverlust. Wir halten Termine ein und liefern genau das, was vereinbart wurde.</p></div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <div class="section-tag" data-de="Kontakt" data-tr="İletişim">Kontakt</div>
+  <h2 class="section-title" data-de="Starten Sie <span class='gold'>jetzt</span>" data-tr="<span class='gold'>Hemen</span> Başlayın">Starten Sie <span class="gold">jetzt</span></h2>
+  <div class="gold-divider"></div>
+  <div class="kontakt-layout">
+    <div class="kontakt-info fade-in">
+      <h3 data-de="Wir freuen uns auf Ihr Projekt" data-tr="Projenizi bekliyoruz">Wir freuen uns auf Ihr Projekt</h3>
+      <p data-de="Schreiben Sie uns – und erhalten Sie Ihre erste Analyse und Beratung völlig kostenlos. Unverbindlich, persönlich, professionell." data-tr="Bize yazın – ilk analizinizi ve danışmanlığınızı tamamen ücretsiz alın. Taahhütsüz, kişisel, profesyonel.">Schreiben Sie uns – und erhalten Sie Ihre erste Analyse und Beratung völlig kostenlos. Unverbindlich, persönlich, professionell.</p>
+      <div class="kontakt-detail"><span>✉️</span><span>info@hattat-web.de</span></div>
+      <div class="kontakt-detail"><span>📍</span><span>Deutschland</span></div>
+      <div class="kontakt-detail"><span>✦</span><span style="color:var(--gold)" data-de="Erstberatung kostenlos & unverbindlich" data-tr="İlk danışmanlık ücretsiz & taahhütsüz">Erstberatung kostenlos & unverbindlich</span></div>
+    </div>
+    <div class="fade-in">
+      <div class="free-note" data-de="✦ Ihre erste Analyse & Beratung ist 100% kostenlos" data-tr="✦ İlk analiziniz ve danışmanlığınız %100 ücretsizdir">✦ Ihre erste Analyse & Beratung ist 100% kostenlos</div>
+      
+          <h2>Kontakt</h2>
+          <br>
+          <br>
+          <a class="btn-primary" href="mailto:info@hattat-web.de"> info@hattat-web.de</a>
+    
+        </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand"><span>HATTAT</span> · Webdesign & Consulting</div>
+  <div class="footer-links">
+    <a href="impressum.html" data-de="Impressum" data-tr="Künye">Impressum</a>
+    <a href="datenschutz.html" data-de="Datenschutz" data-tr="Gizlilik">Datenschutz</a>
+    <a href="#kontakt" data-de="Kontakt" data-tr="İletişim">Kontakt</a>
+  </div>
+  <div class="footer-copy">© 2026 Hattat Webdesign & Consulting</div>
+</footer>
+
+<script>
+// ── LANGUAGE SWITCHER ──────────────────────────────────────
+let currentLang = 'de';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+
+  // Update all data-de / data-tr text nodes
+  document.querySelectorAll('[data-de]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (!val) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+
+  // Placeholders with separate attributes
+  document.querySelectorAll('[data-placeholder-' + lang + ']').forEach(el => {
+    el.placeholder = el.getAttribute('data-placeholder-' + lang);
+  });
+
+  // Select options
+  document.querySelectorAll('select option[data-' + lang + ']').forEach(opt => {
+    opt.textContent = opt.getAttribute('data-' + lang);
+  });
+
+  // Active button style
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.lang-btn[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+}
+
+// ── SECURITY: CSP via meta already set; sanitize form inputs ──
+document.querySelectorAll('input, textarea').forEach(el => {
+  el.addEventListener('input', () => {
+    // Strip basic script injection attempts from display
+    el.value = el.value.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '')
+                       .replace(/javascript:/gi, '')
+                       .replace(/on\w+\s*=/gi, '');
+  });
+});
+
+// ── HONEYPOT: hidden field to catch bots ──
+(function(){
+  const hp = document.createElement('input');
+  hp.type = 'text'; hp.name = 'website'; hp.style.cssText = 'position:absolute;left:-9999px;';
+  hp.tabIndex = -1; hp.autocomplete = 'off';
+  document.querySelector('form') && document.querySelector('form').appendChild(hp);
+})();
+
+// ── SCROLL FADE-IN ────────────────────────────────────────
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// ── SMOOTH NAV ────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+</body>
+</html>
