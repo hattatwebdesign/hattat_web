@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hattat-web.de/sitemap.xml
