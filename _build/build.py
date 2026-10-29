@@ -65,16 +65,16 @@ def jsonld(L):
       "@graph": [
         {
           "@type": "ProfessionalService", "@id": org_id,
-          "name": "Hattat Webdesign & Consulting", "alternateName": "Hattat Web",
+          "name": "Hatnova Web & Consulting", "alternateName": "Hatnova Web",
           "url": C.SITE + "/", "logo": C.SITE + "/assets/mark-512.png", "image": C.SITE + "/assets/og-image.jpg",
           "email": C.EMAIL, "description": L["desc"],
-          "address": {"@type": "PostalAddress", "addressLocality": "Merchweiler", "addressRegion": "Saarland", "addressCountry": "DE"},
+          "address": {"@type": "PostalAddress", "addressCountry": "DE"},
           "areaServed": [{"@type": "Country", "name": n} for n in ("Switzerland", "Türkiye", "United Kingdom", "Germany")],
           "knowsLanguage": ["de", "tr", "en"],
           "sameAs": [C.INSTAGRAM],
           "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": s["t"], "description": s["d"]}} for s in L["services"]["items"]],
         },
-        {"@type": "WebSite", "@id": C.SITE + "/#website", "url": C.SITE + "/", "name": "Hattat Webdesign & Consulting",
+        {"@type": "WebSite", "@id": C.SITE + "/#website", "url": C.SITE + "/", "name": "Hatnova Web & Consulting",
          "inLanguage": ["en", "de", "tr"], "publisher": {"@id": org_id}},
         {"@type": "WebPage", "url": C.SITE + L["path"], "name": L["title"], "inLanguage": L["code"],
          "isPartOf": {"@id": C.SITE + "/#website"}, "about": {"@id": org_id}},
@@ -128,7 +128,7 @@ def main():
 
     open(os.path.join(ROOT, "robots.txt"), "w").write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % C.SITE)
 
-    manifest = {"name": "Hattat Webdesign & Consulting", "short_name": "Hattat", "start_url": "/", "display": "browser",
+    manifest = {"name": "Hatnova Web & Consulting", "short_name": "Hatnova", "start_url": "/", "display": "browser",
                 "background_color": "#FBF8F3", "theme_color": "#FBF8F3",
                 "icons": [{"src": "/assets/mark-192.png", "sizes": "192x192", "type": "image/png"},
                           {"src": "/assets/mark-512.png", "sizes": "512x512", "type": "image/png"}]}

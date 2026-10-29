@@ -8,7 +8,7 @@ SEO-Fokusbegriffe stehen jeweils im Kommentar über der Sprache.
 
 SITE = "https://hattat-web.de"
 EMAIL = "info@hattat-web.de"
-INSTAGRAM = "https://www.instagram.com/hattat_web/"
+INSTAGRAM = "https://www.instagram.com/hatnova_web/"
 
 # ---------------------------------------------------------------------------
 # DEUTSCH  – Märkte: Schweiz (KMU), Deutschland, türkischstämmige Betriebe in DACH
@@ -18,7 +18,7 @@ INSTAGRAM = "https://www.instagram.com/hattat_web/"
 # ---------------------------------------------------------------------------
 DE = {
   "code": "de", "path": "/de/", "og_locale": "de_DE", "name": "Deutsch", "short": "DE",
-  "title": "Webdesign für KMU – individuell & bezahlbar | Hattat Web",
+  "title": "Webdesign für KMU – individuell & bezahlbar | Hatnova Web",
   "desc": "Website erstellen lassen ohne Agenturpreise: Webdesign, SEO und Online-Shops für KMU in der Schweiz, Deutschland und der Türkei. Erstberatung gratis.",
   "nav": {"services": "Leistungen", "process": "Ablauf", "packages": "Pakete", "faq": "FAQ", "contact": "Kontakt", "cta": "Gratis beraten lassen"},
   "skip": "Zum Inhalt springen",
@@ -87,7 +87,7 @@ DE = {
     "cta": "Angebot anfragen",
   },
   "why": {
-    "tag": "Warum Hattat", "title": "Persönlich, verständlich und fair",
+    "tag": "Warum Hatnova", "title": "Persönlich, verständlich und fair",
     "items": [
       {"icon": "user", "t": "Ein fester Ansprechpartner", "d": "Kein Callcenter, kein Ticket-System. Sie sprechen immer direkt mit der Person, die Ihre Website baut."},
       {"icon": "languages", "t": "Wir sprechen Ihre Sprache", "d": "Beratung auf Deutsch, Türkisch und Englisch – und Websites, die Ihre Kundschaft in ihrer Sprache abholen."},
@@ -116,7 +116,7 @@ DE = {
   "contact": {
     "tag": "Kontakt", "title": "Erzählen Sie uns von Ihrem Projekt",
     "lead": "Schreiben Sie uns kurz, worum es geht. Sie erhalten eine persönliche Antwort und Ihre erste Beratung ist kostenlos und unverbindlich.",
-    "email": "E-Mail", "insta": "Instagram", "loc_label": "Standorte", "loc": "Deutschland (Saarland) & Schweiz",
+    "email": "E-Mail", "insta": "Instagram", "loc_label": "Standorte", "loc": "Deutschland & Schweiz",
     "langs_label": "Sprachen", "langs": "Deutsch · Türkçe · English",
     "cta": "E-Mail schreiben", "subject": "Anfrage Website – kostenloses Erstgespräch",
     "box_title": "Erstberatung gratis", "box_text": "Wir schauen uns Ihren aktuellen Auftritt an und zeigen, was sich für Ihr Geschäft lohnt – ohne Verpflichtung.",
@@ -133,7 +133,7 @@ DE = {
 # ---------------------------------------------------------------------------
 TR = {
   "code": "tr", "path": "/tr/", "og_locale": "tr_TR", "name": "Türkçe", "short": "TR",
-  "title": "Uygun Fiyatlı Web Tasarım – KOBİ'lere Özel | Hattat Web",
+  "title": "Uygun Fiyatlı Web Tasarım – KOBİ'lere Özel | Hatnova Web",
   "desc": "KOBİ'ler için kurumsal web sitesi, e-ticaret ve SEO. Hazır şablon yok – işletmenize ve bütçenize özel çözümler. Ücretsiz ön görüşme.",
   "nav": {"services": "Hizmetler", "process": "Süreç", "packages": "Paketler", "faq": "SSS", "contact": "İletişim", "cta": "Ücretsiz danışın"},
   "skip": "İçeriğe geç",
@@ -202,7 +202,7 @@ TR = {
     "cta": "Teklif isteyin",
   },
   "why": {
-    "tag": "Neden Hattat", "title": "Samimi, anlaşılır ve adil",
+    "tag": "Neden Hatnova", "title": "Samimi, anlaşılır ve adil",
     "items": [
       {"icon": "user", "t": "Tek ve sabit muhatap", "d": "Çağrı merkezi yok, bilet sistemi yok. Her zaman sitenizi yapan kişiyle doğrudan konuşursunuz."},
       {"icon": "languages", "t": "Sizin dilinizi konuşuyoruz", "d": "Türkçe, Almanca ve İngilizce danışmanlık – ve müşterilerinize kendi dillerinde ulaşan web siteleri."},
@@ -231,7 +231,7 @@ TR = {
   "contact": {
     "tag": "İletişim", "title": "Projenizi bize anlatın",
     "lead": "Kısaca ne istediğinizi yazın. Size kişisel olarak dönüş yapıyoruz ve ilk danışmanlık ücretsiz ve taahhütsüzdür.",
-    "email": "E-posta", "insta": "Instagram", "loc_label": "Lokasyonlar", "loc": "Almanya (Saarland) ve İsviçre",
+    "email": "E-posta", "insta": "Instagram", "loc_label": "Lokasyonlar", "loc": "Almanya ve İsviçre",
     "langs_label": "Diller", "langs": "Türkçe · Deutsch · English",
     "cta": "E-posta gönderin", "subject": "Web sitesi talebi – ücretsiz ön görüşme",
     "box_title": "İlk danışmanlık ücretsiz", "box_text": "Mevcut dijital varlığınızı inceliyor ve işletmeniz için neyin işe yarayacağını gösteriyoruz – hiçbir yükümlülük olmadan.",
@@ -248,7 +248,7 @@ TR = {
 # ---------------------------------------------------------------------------
 EN = {
   "code": "en", "path": "/", "og_locale": "en_GB", "name": "English", "short": "EN",
-  "title": "Affordable Web Design for Small Businesses | Hattat Web",
+  "title": "Affordable Web Design for Small Businesses | Hatnova Web",
   "desc": "Bespoke websites, local SEO and online shops for small businesses in the UK, Switzerland and Türkiye. Free consultation, fair prices, no templates.",
   "nav": {"services": "Services", "process": "Process", "packages": "Packages", "faq": "FAQ", "contact": "Contact", "cta": "Free consultation"},
   "skip": "Skip to content",
@@ -317,7 +317,7 @@ EN = {
     "cta": "Request a quote",
   },
   "why": {
-    "tag": "Why Hattat", "title": "Personal, clear and fair",
+    "tag": "Why Hatnova", "title": "Personal, clear and fair",
     "items": [
       {"icon": "user", "t": "One dedicated contact", "d": "No call centre, no ticket system. You always talk directly to the person building your website."},
       {"icon": "languages", "t": "We speak your language", "d": "Advice in English, Turkish and German – and websites that reach your customers in their language."},
@@ -346,7 +346,7 @@ EN = {
   "contact": {
     "tag": "Contact", "title": "Tell us about your project",
     "lead": "Send us a short message about what you need. You will get a personal reply, and your first consultation is free with no obligation.",
-    "email": "Email", "insta": "Instagram", "loc_label": "Locations", "loc": "Germany (Saarland) & Switzerland",
+    "email": "Email", "insta": "Instagram", "loc_label": "Locations", "loc": "Germany & Switzerland",
     "langs_label": "Languages", "langs": "English · Türkçe · Deutsch",
     "cta": "Send an email", "subject": "Website enquiry – free consultation",
     "box_title": "Free first consultation", "box_text": "We review your current online presence and show you what is worth doing for your business – with no obligation.",
@@ -384,7 +384,7 @@ FINDER = {
     "pkgs": {"start": "Paket Start", "business": "Paket Business", "custom": "Paket Individuell"},
     "staged": "Tipp: Wir starten mit dem Wichtigsten und bauen in Etappen aus – so bleibt es bezahlbar.",
     "always": "Mobil optimiert, schnell & suchmaschinenfreundlich",
-    "mail_intro": "Hallo Hattat-Team,\n\nich interessiere mich für eine Website. Meine Angaben aus dem Lösungsfinder:",
+    "mail_intro": "Hallo Hatnova-Team,\n\nich interessiere mich für eine Website. Meine Angaben aus dem Lösungsfinder:",
     "mail_outro": "\n\nBitte melden Sie sich für ein kostenloses Erstgespräch.\n\nViele Grüsse",
     "mail_labels": ("Branche", "Ziel", "Budget", "Vorschlag"),
   },
@@ -410,7 +410,7 @@ FINDER = {
     "pkgs": {"start": "Başlangıç paketi", "business": "Kurumsal paket", "custom": "Size Özel paket"},
     "staged": "İpucu: En önemli kısımla başlar, aşama aşama büyütürüz – böylece bütçenize uygun kalır.",
     "always": "Mobil uyumlu, hızlı ve arama motoru dostu",
-    "mail_intro": "Merhaba Hattat ekibi,\n\nbir web sitesiyle ilgileniyorum. Çözüm bulucudaki bilgilerim:",
+    "mail_intro": "Merhaba Hatnova ekibi,\n\nbir web sitesiyle ilgileniyorum. Çözüm bulucudaki bilgilerim:",
     "mail_outro": "\n\nÜcretsiz ön görüşme için benimle iletişime geçebilir misiniz?\n\nSaygılarımla",
     "mail_labels": ("Sektör", "Hedef", "Bütçe", "Öneri"),
   },
@@ -436,7 +436,7 @@ FINDER = {
     "pkgs": {"start": "Starter package", "business": "Business package", "custom": "Bespoke package"},
     "staged": "Tip: we start with the essentials and grow in stages – so it stays affordable.",
     "always": "Mobile-ready, fast & search-engine friendly",
-    "mail_intro": "Hello Hattat team,\n\nI am interested in a website. My answers from the solution finder:",
+    "mail_intro": "Hello Hatnova team,\n\nI am interested in a website. My answers from the solution finder:",
     "mail_outro": "\n\nPlease get in touch to arrange a free consultation.\n\nKind regards",
     "mail_labels": ("Industry", "Goal", "Budget", "Suggestion"),
   },

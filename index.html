@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Affordable Web Design for Small Businesses | Hattat Web</title>
+<title>Affordable Web Design for Small Businesses | Hatnova Web</title>
 <meta name="description" content="Bespoke websites, local SEO and online shops for small businesses in the UK, Switzerland and Türkiye. Free consultation, fair prices, no templates.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Kk1u40Keu+cRWshVGz23yj2//QJhW+EvqylX0fjTl2g='; style-src 'self' 'sha256-M2/fQ9iyDCOgieNwV9/EhET3MRyS0VQzbaHqveqZ9PA='; img-src 'self' data:; connect-src 'self' https://api.country.is; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-PcSUf7aUd9SEFKJdrBlBeCEbjsuFSA8v6JGTnsPnmcI='; style-src 'self' 'sha256-M2/fQ9iyDCOgieNwV9/EhET3MRyS0VQzbaHqveqZ9PA='; img-src 'self' data:; connect-src 'self' https://api.country.is; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
 <link rel="canonical" href="https://hattat-web.de/">
 <link rel="alternate" hreflang="en" href="https://hattat-web.de/">
 <link rel="alternate" hreflang="de" href="https://hattat-web.de/de/">
@@ -19,8 +19,8 @@
 <link rel="apple-touch-icon" href="assets/mark-180.png">
 <link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Hattat Webdesign & Consulting">
-<meta property="og:title" content="Affordable Web Design for Small Businesses | Hattat Web">
+<meta property="og:site_name" content="Hatnova Web & Consulting">
+<meta property="og:title" content="Affordable Web Design for Small Businesses | Hatnova Web">
 <meta property="og:description" content="Bespoke websites, local SEO and online shops for small businesses in the UK, Switzerland and Türkiye. Free consultation, fair prices, no templates.">
 <meta property="og:url" content="https://hattat-web.de/">
 <meta property="og:image" content="https://hattat-web.de/assets/og-image.jpg">
@@ -31,10 +31,10 @@
 <meta property="og:locale:alternate" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
 <style>html.geo-pending body{visibility:hidden;animation:geo-reveal 0s 2.2s forwards}@keyframes geo-reveal{to{visibility:visible}}</style>
-<script>/* Hattat – Spracherkennung anhand der IP (Land) mit Fallbacks.
+<script>/* Hatnova – Spracherkennung anhand der IP (Land) mit Fallbacks.
    Läuft inline im <head>, damit die Weiterleitung auf "/" ohne Flackern passiert.
    Reihenfolge:
-   1. Manuell gewählte Sprache (localStorage "hattat_lang") gewinnt immer.
+   1. Manuell gewählte Sprache (localStorage "hatnova_lang") gewinnt immer.
    2. Land per IP: zuerst /cdn-cgi/trace (nur wenn Cloudflare vorgeschaltet ist – first-party,
       keine Daten an Dritte), sonst api.country.is.
    3. Fällt alles aus: Browsersprache, sonst Englisch.
@@ -46,7 +46,7 @@
     timeout: 1200,
     browserTurkishWins: true       // Türkischsprachige Browser (z. B. Diaspora in DE/CH/UK) → TR
   };
-  var KEY = "hattat_lang", CC = "hattat_cc";
+  var KEY = "hatnova_lang", CC = "hatnova_cc";
   var BOT = /bot|crawl|spider|slurp|lighthouse|pagespeed|bingpreview|facebookexternalhit|embedly|whatsapp|telegram|preview|headless/i;
 
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
@@ -90,7 +90,7 @@
   // ?geotest in der URL schaltet die Bot-Erkennung zum Testen ab
   var isBot = !/[?&]geotest/.test(location.search) && (BOT.test(navigator.userAgent || "") || navigator.webdriver === true);
 
-  w.HattatGeo = {
+  w.HatnovaGeo = {
     isBot: isBot,
     pref: function (v) { return ls(KEY, v); },
     detect: function (cb) { country(function (c) { cb(langFor(c), c); }); },
@@ -111,16 +111,16 @@
   d.documentElement.className += " geo-pending";
   function reveal() { d.documentElement.className = d.documentElement.className.replace(" geo-pending", ""); }
   var cap = setTimeout(reveal, 2000);
-  w.HattatGeo.detect(function (lang) {
+  w.HatnovaGeo.detect(function (lang) {
     clearTimeout(cap);
     if (PATHS[lang]) location.replace(PATHS[lang] + location.hash);
     else reveal();
   });
 })(window, document);
 </script>
-<link rel="stylesheet" href="assets/style.css?v=20261026">
-<script src="assets/app.js?v=20261026" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hattat-web.de/#org","name":"Hattat Webdesign & Consulting","alternateName":"Hattat Web","url":"https://hattat-web.de/","logo":"https://hattat-web.de/assets/mark-512.png","image":"https://hattat-web.de/assets/og-image.jpg","email":"info@hattat-web.de","description":"Bespoke websites, local SEO and online shops for small businesses in the UK, Switzerland and Türkiye. Free consultation, fair prices, no templates.","address":{"@type":"PostalAddress","addressLocality":"","addressRegion":"","addressCountry":"CH"},"areaServed":[{"@type":"Country","name":"Switzerland"},{"@type":"Country","name":"Türkiye"},{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Germany"}],"knowsLanguage":["de","tr","en"],"sameAs":["https://www.instagram.com/hattat_web/"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Small business websites","description":"Modern, mobile-friendly company websites or one-pagers – designed for you, not built from a template."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO & local visibility","description":"Get found on Google: keyword research, Google Business Profile and local search in your area."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-commerce websites","description":"Sell online with a clear, secure shop that you can easily manage yourself."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Multilingual websites","description":"English, Turkish, German – ideal for businesses with international or multilingual customers."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking & web apps","description":"Online appointments, reservations, enquiry forms or small tools that save you time."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital consulting","description":"Honest advice on what is worth it for your business and what is not – in plain English."}}]},{"@type":"WebSite","@id":"https://hattat-web.de/#website","url":"https://hattat-web.de/","name":"Hattat Webdesign & Consulting","inLanguage":["en","de","tr"],"publisher":{"@id":"https://hattat-web.de/#org"}},{"@type":"WebPage","url":"https://hattat-web.de/","name":"Affordable Web Design for Small Businesses | Hattat Web","inLanguage":"en","isPartOf":{"@id":"https://hattat-web.de/#website"},"about":{"@id":"https://hattat-web.de/#org"}},{"@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How much does a small business website cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the scope: a one-page website costs far less than an online shop. After a free first call you receive a clear written quote with no hidden costs. On a tight budget we start with the essentials and expand later."}},{"@type":"Question","name":"How long until my website is live?","acceptedAnswer":{"@type":"Answer","text":"A one-page website is often ready within a few weeks; larger websites or shops take longer. We agree the exact timeline together."}},{"@type":"Question","name":"Do you work with businesses in the UK, Switzerland and Türkiye?","acceptedAnswer":{"@type":"Answer","text":"Yes. We work with SMEs in the UK, Switzerland, Türkiye and Germany. Meetings take place by video call, phone or email – in English, Turkish or German."}},{"@type":"Question","name":"Will my website be found on Google?","acceptedAnswer":{"@type":"Answer","text":"Every website is built to be technically clean and search-engine friendly. We choose keywords your customers really use and, on request, set up your Google Business Profile for local search."}},{"@type":"Question","name":"Can I edit the website myself later?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you like. We set things up so you can change text, images or offers yourself – or we look after it for you."}},{"@type":"Question","name":"Can my website be in more than one language?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build websites in English, Turkish and German – also combined, with each language found separately on Google."}}]}]}</script>
+<link rel="stylesheet" href="assets/style.css?v=20261029">
+<script src="assets/app.js?v=20261029" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hattat-web.de/#org","name":"Hatnova Web & Consulting","alternateName":"Hatnova Web","url":"https://hattat-web.de/","logo":"https://hattat-web.de/assets/mark-512.png","image":"https://hattat-web.de/assets/og-image.jpg","email":"info@hattat-web.de","description":"Bespoke websites, local SEO and online shops for small businesses in the UK, Switzerland and Türkiye. Free consultation, fair prices, no templates.","address":{"@type":"PostalAddress","addressCountry":"DE"},"areaServed":[{"@type":"Country","name":"Switzerland"},{"@type":"Country","name":"Türkiye"},{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Germany"}],"knowsLanguage":["de","tr","en"],"sameAs":["https://www.instagram.com/hatnova_web/"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Small business websites","description":"Modern, mobile-friendly company websites or one-pagers – designed for you, not built from a template."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO & local visibility","description":"Get found on Google: keyword research, Google Business Profile and local search in your area."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-commerce websites","description":"Sell online with a clear, secure shop that you can easily manage yourself."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Multilingual websites","description":"English, Turkish, German – ideal for businesses with international or multilingual customers."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Booking & web apps","description":"Online appointments, reservations, enquiry forms or small tools that save you time."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital consulting","description":"Honest advice on what is worth it for your business and what is not – in plain English."}}]},{"@type":"WebSite","@id":"https://hattat-web.de/#website","url":"https://hattat-web.de/","name":"Hatnova Web & Consulting","inLanguage":["en","de","tr"],"publisher":{"@id":"https://hattat-web.de/#org"}},{"@type":"WebPage","url":"https://hattat-web.de/","name":"Affordable Web Design for Small Businesses | Hatnova Web","inLanguage":"en","isPartOf":{"@id":"https://hattat-web.de/#website"},"about":{"@id":"https://hattat-web.de/#org"}},{"@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How much does a small business website cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the scope: a one-page website costs far less than an online shop. After a free first call you receive a clear written quote with no hidden costs. On a tight budget we start with the essentials and expand later."}},{"@type":"Question","name":"How long until my website is live?","acceptedAnswer":{"@type":"Answer","text":"A one-page website is often ready within a few weeks; larger websites or shops take longer. We agree the exact timeline together."}},{"@type":"Question","name":"Do you work with businesses in the UK, Switzerland and Türkiye?","acceptedAnswer":{"@type":"Answer","text":"Yes. We work with SMEs in the UK, Switzerland, Türkiye and Germany. Meetings take place by video call, phone or email – in English, Turkish or German."}},{"@type":"Question","name":"Will my website be found on Google?","acceptedAnswer":{"@type":"Answer","text":"Every website is built to be technically clean and search-engine friendly. We choose keywords your customers really use and, on request, set up your Google Business Profile for local search."}},{"@type":"Question","name":"Can I edit the website myself later?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you like. We set things up so you can change text, images or offers yourself – or we look after it for you."}},{"@type":"Question","name":"Can my website be in more than one language?","acceptedAnswer":{"@type":"Answer","text":"Yes. We build websites in English, Turkish and German – also combined, with each language found separately on Google."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -135,9 +135,9 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-in">
-    <a class="brand" href="./" aria-label="Hattat Webdesign & Consulting">
+    <a class="brand" href="./" aria-label="Hatnova Web & Consulting">
       <img src="assets/mark-64.png" width="40" height="40" alt="">
-      <span class="brand-txt"><strong>HATTAT</strong><small>Webdesign &amp; Consulting</small></span>
+      <span class="brand-txt"><strong>Hatnova</strong><small>WEB &amp; CONSULTING</small></span>
     </a>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#leistungen">Services</a>
@@ -314,7 +314,7 @@
       </div>
     </aside>
   </div>
-  <script type="application/json" id="finder-data">{"industries": {"food": ["Restaurant & café", ["Mobile-friendly online menu", "One-click booking or ordering"]], "trade": ["Trades & construction", ["Before/after project gallery", "Enquiry form with photo upload"]], "health": ["Clinic & health", ["Online appointment booking", "Treatments explained clearly"]], "hotel": ["Hotel & tourism", ["Direct bookings without portal fees", "Photo gallery & local tips"]], "retail": ["Retail & shop", ["Product catalogue or online shop", "Opening hours & offers kept current"]], "service": ["Services & consulting", ["Clear service pages with price ranges", "Trust through customer reviews"]], "other": ["Other industry", ["Structure built around your processes", "Features based on your needs"]]}, "goals": {"start": ["My first website", ["A professional presence, quickly"]], "leads": ["More enquiries", ["Clear ways to get in touch on every page"]], "google": ["Get found on Google", ["Local SEO & Google Business Profile"]], "sell": ["Sell online", ["Online shop with secure payments"]], "book": ["Appointments / bookings", ["A booking system that saves you time"]], "intl": ["New countries / languages", ["Multilingual pages, each found on Google"]]}, "budgets": {"small": "Start small", "mid": "Medium", "open": "Not sure yet"}, "pkgs": {"start": "Starter package", "business": "Business package", "custom": "Bespoke package"}, "staged": "Tip: we start with the essentials and grow in stages – so it stays affordable.", "always": "Mobile-ready, fast & search-engine friendly", "mail_intro": "Hello Hattat team,\n\nI am interested in a website. My answers from the solution finder:", "mail_outro": "\n\nPlease get in touch to arrange a free consultation.\n\nKind regards", "mail_labels": ["Industry", "Goal", "Budget", "Suggestion"], "email": "info@hattat-web.de"}</script>
+  <script type="application/json" id="finder-data">{"industries": {"food": ["Restaurant & café", ["Mobile-friendly online menu", "One-click booking or ordering"]], "trade": ["Trades & construction", ["Before/after project gallery", "Enquiry form with photo upload"]], "health": ["Clinic & health", ["Online appointment booking", "Treatments explained clearly"]], "hotel": ["Hotel & tourism", ["Direct bookings without portal fees", "Photo gallery & local tips"]], "retail": ["Retail & shop", ["Product catalogue or online shop", "Opening hours & offers kept current"]], "service": ["Services & consulting", ["Clear service pages with price ranges", "Trust through customer reviews"]], "other": ["Other industry", ["Structure built around your processes", "Features based on your needs"]]}, "goals": {"start": ["My first website", ["A professional presence, quickly"]], "leads": ["More enquiries", ["Clear ways to get in touch on every page"]], "google": ["Get found on Google", ["Local SEO & Google Business Profile"]], "sell": ["Sell online", ["Online shop with secure payments"]], "book": ["Appointments / bookings", ["A booking system that saves you time"]], "intl": ["New countries / languages", ["Multilingual pages, each found on Google"]]}, "budgets": {"small": "Start small", "mid": "Medium", "open": "Not sure yet"}, "pkgs": {"start": "Starter package", "business": "Business package", "custom": "Bespoke package"}, "staged": "Tip: we start with the essentials and grow in stages – so it stays affordable.", "always": "Mobile-ready, fast & search-engine friendly", "mail_intro": "Hello Hatnova team,\n\nI am interested in a website. My answers from the solution finder:", "mail_outro": "\n\nPlease get in touch to arrange a free consultation.\n\nKind regards", "mail_labels": ["Industry", "Goal", "Budget", "Suggestion"], "email": "info@hattat-web.de"}</script>
 </section>
 
 <!-- BRANCHEN -->
@@ -370,7 +370,7 @@
 <section class="sec sec-dark" id="vorteile">
   <div class="wrap">
     <div class="sec-head center">
-      <p class="tag">Why Hattat</p>
+      <p class="tag">Why Hatnova</p>
       <h2>Personal, clear and fair</h2>
     </div>
     <div class="cards4">
@@ -456,8 +456,8 @@
       <p class="sec-lead">Send us a short message about what you need. You will get a personal reply, and your first consultation is free with no obligation.</p>
       <ul class="contact-list">
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><div><small>Email</small><a href="mailto:info@hattat-web.de">info@hattat-web.de</a></div></li>
-        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><div><small>Instagram</small><a href="https://www.instagram.com/hattat_web/" rel="noopener" target="_blank">@hattat_web</a></div></li>
-        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Locations</small><span> Switzerland</span></div></li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><div><small>Instagram</small><a href="https://www.instagram.com/hatnova_web/" rel="noopener" target="_blank">@hatnova_web</a></div></li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Locations</small><span>Germany &amp; Switzerland</span></div></li>
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><div><small>Languages</small><span>English · Türkçe · Deutsch</span></div></li>
       </ul>
     </div>
@@ -466,7 +466,7 @@
       <h3>Free first consultation</h3>
       <p>We review your current online presence and show you what is worth doing for your business – with no obligation.</p>
       <a class="btn btn-gold btn-block" href="mailto:info@hattat-web.de?subject=Website%20enquiry%20%E2%80%93%20free%20consultation"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Send an email</a>
-      <a class="btn btn-ghost btn-block" href="https://www.instagram.com/hattat_web/" rel="noopener" target="_blank"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+      <a class="btn btn-ghost btn-block" href="https://www.instagram.com/hatnova_web/" rel="noopener" target="_blank"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
     </div>
   </div>
 </section>
@@ -477,14 +477,14 @@
   <div class="wrap footer-in">
     <div class="footer-brand">
       <img src="assets/mark-64.png" width="36" height="36" alt="" loading="lazy">
-      <div><strong>HATTAT</strong><span>Web design &amp; consulting for SMEs</span></div>
+      <div><strong>Hatnova</strong><span>Web design &amp; consulting for SMEs</span></div>
     </div>
     <nav class="footer-links" aria-label="Footer">
       <a href="impressum.html">Legal notice</a>
       <a href="datenschutz.html">Privacy</a>
       <a href="#kontakt">Contact</a>
 <a href="de/" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a>    </nav>
-    <p class="footer-copy">© <span id="year">2026</span> Hattat Webdesign &amp; Consulting. All rights reserved.</p>
+    <p class="footer-copy">© <span id="year">2026</span> Hatnova Web &amp; Consulting. All rights reserved.</p>
   </div>
 </footer>
 

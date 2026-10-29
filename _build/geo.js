@@ -1,7 +1,7 @@
-/* Hattat – Spracherkennung anhand der IP (Land) mit Fallbacks.
+/* Hatnova – Spracherkennung anhand der IP (Land) mit Fallbacks.
    Läuft inline im <head>, damit die Weiterleitung auf "/" ohne Flackern passiert.
    Reihenfolge:
-   1. Manuell gewählte Sprache (localStorage "hattat_lang") gewinnt immer.
+   1. Manuell gewählte Sprache (localStorage "hatnova_lang") gewinnt immer.
    2. Land per IP: zuerst /cdn-cgi/trace (nur wenn Cloudflare vorgeschaltet ist – first-party,
       keine Daten an Dritte), sonst api.country.is.
    3. Fällt alles aus: Browsersprache, sonst Englisch.
@@ -13,7 +13,7 @@
     timeout: 1200,
     browserTurkishWins: true       // Türkischsprachige Browser (z. B. Diaspora in DE/CH/UK) → TR
   };
-  var KEY = "hattat_lang", CC = "hattat_cc";
+  var KEY = "hatnova_lang", CC = "hatnova_cc";
   var BOT = /bot|crawl|spider|slurp|lighthouse|pagespeed|bingpreview|facebookexternalhit|embedly|whatsapp|telegram|preview|headless/i;
 
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
@@ -57,7 +57,7 @@
   // ?geotest in der URL schaltet die Bot-Erkennung zum Testen ab
   var isBot = !/[?&]geotest/.test(location.search) && (BOT.test(navigator.userAgent || "") || navigator.webdriver === true);
 
-  w.HattatGeo = {
+  w.HatnovaGeo = {
     isBot: isBot,
     pref: function (v) { return ls(KEY, v); },
     detect: function (cb) { country(function (c) { cb(langFor(c), c); }); },
@@ -78,7 +78,7 @@
   d.documentElement.className += " geo-pending";
   function reveal() { d.documentElement.className = d.documentElement.className.replace(" geo-pending", ""); }
   var cap = setTimeout(reveal, 2000);
-  w.HattatGeo.detect(function (lang) {
+  w.HatnovaGeo.detect(function (lang) {
     clearTimeout(cap);
     if (PATHS[lang]) location.replace(PATHS[lang] + location.hash);
     else reveal();

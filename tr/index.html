@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Uygun Fiyatlı Web Tasarım – KOBİ&#39;lere Özel | Hattat Web</title>
+<title>Uygun Fiyatlı Web Tasarım – KOBİ&#39;lere Özel | Hatnova Web</title>
 <meta name="description" content="KOBİ&#39;ler için kurumsal web sitesi, e-ticaret ve SEO. Hazır şablon yok – işletmenize ve bütçenize özel çözümler. Ücretsiz ön görüşme.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Kk1u40Keu+cRWshVGz23yj2//QJhW+EvqylX0fjTl2g='; style-src 'self' 'sha256-M2/fQ9iyDCOgieNwV9/EhET3MRyS0VQzbaHqveqZ9PA='; img-src 'self' data:; connect-src 'self' https://api.country.is; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-PcSUf7aUd9SEFKJdrBlBeCEbjsuFSA8v6JGTnsPnmcI='; style-src 'self' 'sha256-M2/fQ9iyDCOgieNwV9/EhET3MRyS0VQzbaHqveqZ9PA='; img-src 'self' data:; connect-src 'self' https://api.country.is; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
 <link rel="canonical" href="https://hattat-web.de/tr/">
 <link rel="alternate" hreflang="en" href="https://hattat-web.de/">
 <link rel="alternate" hreflang="de" href="https://hattat-web.de/de/">
@@ -19,8 +19,8 @@
 <link rel="apple-touch-icon" href="../assets/mark-180.png">
 <link rel="manifest" href="../site.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Hattat Webdesign & Consulting">
-<meta property="og:title" content="Uygun Fiyatlı Web Tasarım – KOBİ&#39;lere Özel | Hattat Web">
+<meta property="og:site_name" content="Hatnova Web & Consulting">
+<meta property="og:title" content="Uygun Fiyatlı Web Tasarım – KOBİ&#39;lere Özel | Hatnova Web">
 <meta property="og:description" content="KOBİ&#39;ler için kurumsal web sitesi, e-ticaret ve SEO. Hazır şablon yok – işletmenize ve bütçenize özel çözümler. Ücretsiz ön görüşme.">
 <meta property="og:url" content="https://hattat-web.de/tr/">
 <meta property="og:image" content="https://hattat-web.de/assets/og-image.jpg">
@@ -31,10 +31,10 @@
 <meta property="og:locale:alternate" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <style>html.geo-pending body{visibility:hidden;animation:geo-reveal 0s 2.2s forwards}@keyframes geo-reveal{to{visibility:visible}}</style>
-<script>/* Hattat – Spracherkennung anhand der IP (Land) mit Fallbacks.
+<script>/* Hatnova – Spracherkennung anhand der IP (Land) mit Fallbacks.
    Läuft inline im <head>, damit die Weiterleitung auf "/" ohne Flackern passiert.
    Reihenfolge:
-   1. Manuell gewählte Sprache (localStorage "hattat_lang") gewinnt immer.
+   1. Manuell gewählte Sprache (localStorage "hatnova_lang") gewinnt immer.
    2. Land per IP: zuerst /cdn-cgi/trace (nur wenn Cloudflare vorgeschaltet ist – first-party,
       keine Daten an Dritte), sonst api.country.is.
    3. Fällt alles aus: Browsersprache, sonst Englisch.
@@ -46,7 +46,7 @@
     timeout: 1200,
     browserTurkishWins: true       // Türkischsprachige Browser (z. B. Diaspora in DE/CH/UK) → TR
   };
-  var KEY = "hattat_lang", CC = "hattat_cc";
+  var KEY = "hatnova_lang", CC = "hatnova_cc";
   var BOT = /bot|crawl|spider|slurp|lighthouse|pagespeed|bingpreview|facebookexternalhit|embedly|whatsapp|telegram|preview|headless/i;
 
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
@@ -90,7 +90,7 @@
   // ?geotest in der URL schaltet die Bot-Erkennung zum Testen ab
   var isBot = !/[?&]geotest/.test(location.search) && (BOT.test(navigator.userAgent || "") || navigator.webdriver === true);
 
-  w.HattatGeo = {
+  w.HatnovaGeo = {
     isBot: isBot,
     pref: function (v) { return ls(KEY, v); },
     detect: function (cb) { country(function (c) { cb(langFor(c), c); }); },
@@ -111,16 +111,16 @@
   d.documentElement.className += " geo-pending";
   function reveal() { d.documentElement.className = d.documentElement.className.replace(" geo-pending", ""); }
   var cap = setTimeout(reveal, 2000);
-  w.HattatGeo.detect(function (lang) {
+  w.HatnovaGeo.detect(function (lang) {
     clearTimeout(cap);
     if (PATHS[lang]) location.replace(PATHS[lang] + location.hash);
     else reveal();
   });
 })(window, document);
 </script>
-<link rel="stylesheet" href="../assets/style.css?v=20261026">
-<script src="../assets/app.js?v=20261026" defer></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hattat-web.de/#org","name":"Hattat Webdesign & Consulting","alternateName":"Hattat Web","url":"https://hattat-web.de/","logo":"https://hattat-web.de/assets/mark-512.png","image":"https://hattat-web.de/assets/og-image.jpg","email":"info@hattat-web.de","description":"KOBİ'ler için kurumsal web sitesi, e-ticaret ve SEO. Hazır şablon yok – işletmenize ve bütçenize özel çözümler. Ücretsiz ön görüşme.","address":{"@type":"PostalAddress","addressLocality":"","addressRegion":"","addressCountry":"Ch"},"areaServed":[{"@type":"Country","name":"Switzerland"},{"@type":"Country","name":"Türkiye"},{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Germany"}],"knowsLanguage":["de","tr","en"],"sameAs":["https://www.instagram.com/hattat_web/"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Kurumsal web sitesi","description":"Modern, mobil uyumlu kurumsal site veya tek sayfalık tanıtım sitesi – hazır şablon değil, size özel tasarım."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO ve yerel görünürlük","description":"Google'da üst sıralarda bulunun: anahtar kelimeler, Google İşletme Profili ve bölgenizde yerel arama."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-ticaret sitesi","description":"Ürünlerinizi online satın – sade, güvenli ve kendiniz kolayca yönetebileceğiniz şekilde."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Çok dilli web siteleri","description":"Türkçe, Almanca, İngilizce – yurt dışı müşterisi olan veya ihracat yapan işletmeler için ideal."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rezervasyon ve web uygulamaları","description":"Online randevu, rezervasyon, teklif formları veya işinizi kolaylaştıran küçük araçlar."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Dijital danışmanlık","description":"Dürüst değerlendirme: İşletmeniz için ne işe yarar, ne yaramaz? Açık ve anlaşılır bir dille."}}]},{"@type":"WebSite","@id":"https://hattat-web.de/#website","url":"https://hattat-web.de/","name":"Hattat Webdesign & Consulting","inLanguage":["en","de","tr"],"publisher":{"@id":"https://hattat-web.de/#org"}},{"@type":"WebPage","url":"https://hattat-web.de/tr/","name":"Uygun Fiyatlı Web Tasarım – KOBİ'lere Özel | Hattat Web","inLanguage":"tr","isPartOf":{"@id":"https://hattat-web.de/#website"},"about":{"@id":"https://hattat-web.de/#org"}},{"@type":"FAQPage","inLanguage":"tr","mainEntity":[{"@type":"Question","name":"Küçük bir işletme için web sitesi fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Kapsama göre değişir: Tek sayfalık bir site, bir e-ticaret sitesinden çok daha uygundur. Ücretsiz ön görüşmenin ardından gizli maliyet içermeyen, net ve yazılı bir teklif alırsınız. Bütçe kısıtlıysa en önemli kısımla başlar, sonra büyütürüz."}},{"@type":"Question","name":"Web sitem ne kadar sürede yayına girer?","acceptedAnswer":{"@type":"Answer","text":"Tek sayfalık bir site çoğu zaman birkaç hafta içinde hazır olur; daha büyük siteler veya mağazalar buna göre daha uzun sürer. Kesin zaman planını birlikte belirliyoruz."}},{"@type":"Question","name":"Türkiye, İsviçre ve İngiltere'deki firmalarla da çalışıyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Evet. Türkiye, İsviçre, İngiltere ve Almanya'daki KOBİ'lerle çalışıyoruz. Görüşmeler görüntülü, telefonla veya e-posta ile – Türkçe, Almanca ya da İngilizce yapılır."}},{"@type":"Question","name":"Web sitem Google'da çıkacak mı?","acceptedAnswer":{"@type":"Answer","text":"Her site teknik olarak temiz ve arama motoru dostu kurulur. Müşterilerinizin gerçekten kullandığı anahtar kelimeleri seçer, istenirse yerel arama için Google İşletme Profilinizi de oluştururuz."}},{"@type":"Question","name":"Web sitemi sonradan kendim düzenleyebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, isterseniz. Siteyi metinleri, görselleri veya teklifleri kendiniz değiştirebileceğiniz şekilde kuruyoruz – ya da bakımını biz üstleniyoruz."}},{"@type":"Question","name":"Web sitem birden fazla dilde olabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Türkçe, Almanca ve İngilizce siteler hazırlıyoruz – birlikte de olabilir; her dil Google'da ayrı ayrı bulunacak şekilde."}}]}]}</script>
+<link rel="stylesheet" href="../assets/style.css?v=20261029">
+<script src="../assets/app.js?v=20261029" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://hattat-web.de/#org","name":"Hatnova Web & Consulting","alternateName":"Hatnova Web","url":"https://hattat-web.de/","logo":"https://hattat-web.de/assets/mark-512.png","image":"https://hattat-web.de/assets/og-image.jpg","email":"info@hattat-web.de","description":"KOBİ'ler için kurumsal web sitesi, e-ticaret ve SEO. Hazır şablon yok – işletmenize ve bütçenize özel çözümler. Ücretsiz ön görüşme.","address":{"@type":"PostalAddress","addressCountry":"DE"},"areaServed":[{"@type":"Country","name":"Switzerland"},{"@type":"Country","name":"Türkiye"},{"@type":"Country","name":"United Kingdom"},{"@type":"Country","name":"Germany"}],"knowsLanguage":["de","tr","en"],"sameAs":["https://www.instagram.com/hatnova_web/"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Kurumsal web sitesi","description":"Modern, mobil uyumlu kurumsal site veya tek sayfalık tanıtım sitesi – hazır şablon değil, size özel tasarım."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"SEO ve yerel görünürlük","description":"Google'da üst sıralarda bulunun: anahtar kelimeler, Google İşletme Profili ve bölgenizde yerel arama."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"E-ticaret sitesi","description":"Ürünlerinizi online satın – sade, güvenli ve kendiniz kolayca yönetebileceğiniz şekilde."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Çok dilli web siteleri","description":"Türkçe, Almanca, İngilizce – yurt dışı müşterisi olan veya ihracat yapan işletmeler için ideal."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rezervasyon ve web uygulamaları","description":"Online randevu, rezervasyon, teklif formları veya işinizi kolaylaştıran küçük araçlar."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Dijital danışmanlık","description":"Dürüst değerlendirme: İşletmeniz için ne işe yarar, ne yaramaz? Açık ve anlaşılır bir dille."}}]},{"@type":"WebSite","@id":"https://hattat-web.de/#website","url":"https://hattat-web.de/","name":"Hatnova Web & Consulting","inLanguage":["en","de","tr"],"publisher":{"@id":"https://hattat-web.de/#org"}},{"@type":"WebPage","url":"https://hattat-web.de/tr/","name":"Uygun Fiyatlı Web Tasarım – KOBİ'lere Özel | Hatnova Web","inLanguage":"tr","isPartOf":{"@id":"https://hattat-web.de/#website"},"about":{"@id":"https://hattat-web.de/#org"}},{"@type":"FAQPage","inLanguage":"tr","mainEntity":[{"@type":"Question","name":"Küçük bir işletme için web sitesi fiyatları ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Kapsama göre değişir: Tek sayfalık bir site, bir e-ticaret sitesinden çok daha uygundur. Ücretsiz ön görüşmenin ardından gizli maliyet içermeyen, net ve yazılı bir teklif alırsınız. Bütçe kısıtlıysa en önemli kısımla başlar, sonra büyütürüz."}},{"@type":"Question","name":"Web sitem ne kadar sürede yayına girer?","acceptedAnswer":{"@type":"Answer","text":"Tek sayfalık bir site çoğu zaman birkaç hafta içinde hazır olur; daha büyük siteler veya mağazalar buna göre daha uzun sürer. Kesin zaman planını birlikte belirliyoruz."}},{"@type":"Question","name":"Türkiye, İsviçre ve İngiltere'deki firmalarla da çalışıyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Evet. Türkiye, İsviçre, İngiltere ve Almanya'daki KOBİ'lerle çalışıyoruz. Görüşmeler görüntülü, telefonla veya e-posta ile – Türkçe, Almanca ya da İngilizce yapılır."}},{"@type":"Question","name":"Web sitem Google'da çıkacak mı?","acceptedAnswer":{"@type":"Answer","text":"Her site teknik olarak temiz ve arama motoru dostu kurulur. Müşterilerinizin gerçekten kullandığı anahtar kelimeleri seçer, istenirse yerel arama için Google İşletme Profilinizi de oluştururuz."}},{"@type":"Question","name":"Web sitemi sonradan kendim düzenleyebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, isterseniz. Siteyi metinleri, görselleri veya teklifleri kendiniz değiştirebileceğiniz şekilde kuruyoruz – ya da bakımını biz üstleniyoruz."}},{"@type":"Question","name":"Web sitem birden fazla dilde olabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Türkçe, Almanca ve İngilizce siteler hazırlıyoruz – birlikte de olabilir; her dil Google'da ayrı ayrı bulunacak şekilde."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">İçeriğe geç</a>
@@ -135,9 +135,9 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-in">
-    <a class="brand" href="./" aria-label="Hattat Webdesign & Consulting">
+    <a class="brand" href="./" aria-label="Hatnova Web & Consulting">
       <img src="../assets/mark-64.png" width="40" height="40" alt="">
-      <span class="brand-txt"><strong>HATTAT</strong><small>Webdesign &amp; Consulting</small></span>
+      <span class="brand-txt"><strong>Hatnova</strong><small>WEB &amp; CONSULTING</small></span>
     </a>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#leistungen">Hizmetler</a>
@@ -314,7 +314,7 @@
       </div>
     </aside>
   </div>
-  <script type="application/json" id="finder-data">{"industries": {"food": ["Restoran & kafe", ["Mobil uyumlu online menü", "Tek tıkla rezervasyon veya sipariş"]], "trade": ["İnşaat & zanaat", ["Öncesi/sonrası fotoğraflarla referanslar", "Fotoğraf yüklemeli teklif formu"]], "health": ["Klinik & sağlık", ["Online randevu sistemi", "Hizmetlerin anlaşılır anlatımı"]], "hotel": ["Otel & turizm", ["Komisyonsuz direkt rezervasyon", "Fotoğraf galerisi & çevre önerileri"]], "retail": ["Mağaza & ticaret", ["Ürün kataloğu veya e-ticaret", "Güncel çalışma saatleri & kampanyalar"]], "service": ["Hizmet & danışmanlık", ["Fiyat aralıklı net hizmet sayfaları", "Müşteri yorumlarıyla güven"]], "other": ["Diğer sektör", ["İş süreçlerinize uygun yapı", "İhtiyacınıza göre özellikler"]]}, "goals": {"start": ["İlk web sitem", ["Kısa sürede profesyonel bir görünüm"]], "leads": ["Daha fazla talep", ["Her sayfada net iletişim yolları"]], "google": ["Google'da bulunmak", ["Yerel SEO & Google İşletme Profili"]], "sell": ["Online satış", ["Güvenli ödemeli e-ticaret sitesi"]], "book": ["Randevu / rezervasyon", ["İşinizi kolaylaştıran rezervasyon sistemi"]], "intl": ["Yeni ülkeler / diller", ["Her dili Google'da ayrı bulunan çok dilli sayfalar"]]}, "budgets": {"small": "Küçük başlamak", "mid": "Orta", "open": "Henüz belli değil"}, "pkgs": {"start": "Başlangıç paketi", "business": "Kurumsal paket", "custom": "Size Özel paket"}, "staged": "İpucu: En önemli kısımla başlar, aşama aşama büyütürüz – böylece bütçenize uygun kalır.", "always": "Mobil uyumlu, hızlı ve arama motoru dostu", "mail_intro": "Merhaba Hattat ekibi,\n\nbir web sitesiyle ilgileniyorum. Çözüm bulucudaki bilgilerim:", "mail_outro": "\n\nÜcretsiz ön görüşme için benimle iletişime geçebilir misiniz?\n\nSaygılarımla", "mail_labels": ["Sektör", "Hedef", "Bütçe", "Öneri"], "email": "info@hattat-web.de"}</script>
+  <script type="application/json" id="finder-data">{"industries": {"food": ["Restoran & kafe", ["Mobil uyumlu online menü", "Tek tıkla rezervasyon veya sipariş"]], "trade": ["İnşaat & zanaat", ["Öncesi/sonrası fotoğraflarla referanslar", "Fotoğraf yüklemeli teklif formu"]], "health": ["Klinik & sağlık", ["Online randevu sistemi", "Hizmetlerin anlaşılır anlatımı"]], "hotel": ["Otel & turizm", ["Komisyonsuz direkt rezervasyon", "Fotoğraf galerisi & çevre önerileri"]], "retail": ["Mağaza & ticaret", ["Ürün kataloğu veya e-ticaret", "Güncel çalışma saatleri & kampanyalar"]], "service": ["Hizmet & danışmanlık", ["Fiyat aralıklı net hizmet sayfaları", "Müşteri yorumlarıyla güven"]], "other": ["Diğer sektör", ["İş süreçlerinize uygun yapı", "İhtiyacınıza göre özellikler"]]}, "goals": {"start": ["İlk web sitem", ["Kısa sürede profesyonel bir görünüm"]], "leads": ["Daha fazla talep", ["Her sayfada net iletişim yolları"]], "google": ["Google'da bulunmak", ["Yerel SEO & Google İşletme Profili"]], "sell": ["Online satış", ["Güvenli ödemeli e-ticaret sitesi"]], "book": ["Randevu / rezervasyon", ["İşinizi kolaylaştıran rezervasyon sistemi"]], "intl": ["Yeni ülkeler / diller", ["Her dili Google'da ayrı bulunan çok dilli sayfalar"]]}, "budgets": {"small": "Küçük başlamak", "mid": "Orta", "open": "Henüz belli değil"}, "pkgs": {"start": "Başlangıç paketi", "business": "Kurumsal paket", "custom": "Size Özel paket"}, "staged": "İpucu: En önemli kısımla başlar, aşama aşama büyütürüz – böylece bütçenize uygun kalır.", "always": "Mobil uyumlu, hızlı ve arama motoru dostu", "mail_intro": "Merhaba Hatnova ekibi,\n\nbir web sitesiyle ilgileniyorum. Çözüm bulucudaki bilgilerim:", "mail_outro": "\n\nÜcretsiz ön görüşme için benimle iletişime geçebilir misiniz?\n\nSaygılarımla", "mail_labels": ["Sektör", "Hedef", "Bütçe", "Öneri"], "email": "info@hattat-web.de"}</script>
 </section>
 
 <!-- BRANCHEN -->
@@ -370,7 +370,7 @@
 <section class="sec sec-dark" id="vorteile">
   <div class="wrap">
     <div class="sec-head center">
-      <p class="tag">Neden Hattat</p>
+      <p class="tag">Neden Hatnova</p>
       <h2>Samimi, anlaşılır ve adil</h2>
     </div>
     <div class="cards4">
@@ -456,7 +456,7 @@
       <p class="sec-lead">Kısaca ne istediğinizi yazın. Size kişisel olarak dönüş yapıyoruz ve ilk danışmanlık ücretsiz ve taahhütsüzdür.</p>
       <ul class="contact-list">
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><div><small>E-posta</small><a href="mailto:info@hattat-web.de">info@hattat-web.de</a></div></li>
-        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><div><small>Instagram</small><a href="https://www.instagram.com/hattat_web/" rel="noopener" target="_blank">@hattat_web</a></div></li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><div><small>Instagram</small><a href="https://www.instagram.com/hatnova_web/" rel="noopener" target="_blank">@hatnova_web</a></div></li>
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Lokasyonlar</small><span>Almanya ve İsviçre</span></div></li>
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><div><small>Diller</small><span>Türkçe · Deutsch · English</span></div></li>
       </ul>
@@ -466,7 +466,7 @@
       <h3>İlk danışmanlık ücretsiz</h3>
       <p>Mevcut dijital varlığınızı inceliyor ve işletmeniz için neyin işe yarayacağını gösteriyoruz – hiçbir yükümlülük olmadan.</p>
       <a class="btn btn-gold btn-block" href="mailto:info@hattat-web.de?subject=Web%20sitesi%20talebi%20%E2%80%93%20%C3%BCcretsiz%20%C3%B6n%20g%C3%B6r%C3%BC%C5%9Fme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> E-posta gönderin</a>
-      <a class="btn btn-ghost btn-block" href="https://www.instagram.com/hattat_web/" rel="noopener" target="_blank"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+      <a class="btn btn-ghost btn-block" href="https://www.instagram.com/hatnova_web/" rel="noopener" target="_blank"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
     </div>
   </div>
 </section>
@@ -477,14 +477,14 @@
   <div class="wrap footer-in">
     <div class="footer-brand">
       <img src="../assets/mark-64.png" width="36" height="36" alt="" loading="lazy">
-      <div><strong>HATTAT</strong><span>KOBİ&#39;ler için web tasarım ve danışmanlık</span></div>
+      <div><strong>Hatnova</strong><span>KOBİ&#39;ler için web tasarım ve danışmanlık</span></div>
     </div>
     <nav class="footer-links" aria-label="Footer">
       <a href="../impressum.html">Künye</a>
       <a href="../datenschutz.html">Gizlilik</a>
       <a href="#kontakt">İletişim</a>
 <a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="../" hreflang="en" lang="en" data-lang="en">English</a>    </nav>
-    <p class="footer-copy">© <span id="year">2026</span> Hattat Webdesign &amp; Consulting. Tüm hakları saklıdır.</p>
+    <p class="footer-copy">© <span id="year">2026</span> Hatnova Web &amp; Consulting. Tüm hakları saklıdır.</p>
   </div>
 </footer>
 

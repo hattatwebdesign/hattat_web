@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon" href="{{ B }}assets/mark-180.png">
 <link rel="manifest" href="{{ B }}site.webmanifest">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Hattat Webdesign & Consulting">
+<meta property="og:site_name" content="Hatnova Web & Consulting">
 <meta property="og:title" content="{{ L.title }}">
 <meta property="og:description" content="{{ L.desc }}">
 <meta property="og:url" content="{{ SITE }}{{ L.path }}">
@@ -46,9 +46,9 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-in">
-    <a class="brand" href="./" aria-label="Hattat Webdesign & Consulting">
+    <a class="brand" href="./" aria-label="Hatnova Web & Consulting">
       <img src="{{ B }}assets/mark-64.png" width="40" height="40" alt="">
-      <span class="brand-txt"><strong>HATTAT</strong><small>Webdesign &amp; Consulting</small></span>
+      <span class="brand-txt"><strong>Hatnova</strong><small>WEB &amp; CONSULTING</small></span>
     </a>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#leistungen">{{ L.nav.services }}</a>
@@ -305,7 +305,7 @@
       <p class="sec-lead">{{ L.contact.lead }}</p>
       <ul class="contact-list">
         <li>{{ icon('mail') }}<div><small>{{ L.contact.email }}</small><a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></div></li>
-        <li>{{ icon('instagram') }}<div><small>{{ L.contact.insta }}</small><a href="{{ INSTAGRAM }}" rel="noopener" target="_blank">@hattat_web</a></div></li>
+        <li>{{ icon('instagram') }}<div><small>{{ L.contact.insta }}</small><a href="{{ INSTAGRAM }}" rel="noopener" target="_blank">@hatnova_web</a></div></li>
         <li>{{ icon('pin') }}<div><small>{{ L.contact.loc_label }}</small><span>{{ L.contact.loc }}</span></div></li>
         <li>{{ icon('languages') }}<div><small>{{ L.contact.langs_label }}</small><span>{{ L.contact.langs }}</span></div></li>
       </ul>
@@ -326,7 +326,7 @@
   <div class="wrap footer-in">
     <div class="footer-brand">
       <img src="{{ B }}assets/mark-64.png" width="36" height="36" alt="" loading="lazy">
-      <div><strong>HATTAT</strong><span>{{ L.footer.tagline }}</span></div>
+      <div><strong>Hatnova</strong><span>{{ L.footer.tagline }}</span></div>
     </div>
     <nav class="footer-links" aria-label="Footer">
       <a href="{{ B }}impressum.html">{{ L.footer.imprint }}</a>
@@ -334,7 +334,7 @@
       <a href="#kontakt">{{ L.nav.contact }}</a>
       {% for x in LANGS_ORDERED if x.code != L.code %}<a href="{{ rel(x) }}" hreflang="{{ x.code }}" lang="{{ x.code }}" data-lang="{{ x.code }}">{{ x.name }}</a>{% endfor %}
     </nav>
-    <p class="footer-copy">© <span id="year">{{ year }}</span> Hattat Webdesign &amp; Consulting. {{ L.footer.rights }}</p>
+    <p class="footer-copy">© <span id="year">{{ year }}</span> Hatnova Web &amp; Consulting. {{ L.footer.rights }}</p>
   </div>
 </footer>
 

@@ -1,10 +1,10 @@
-/* Hattat Webdesign & Consulting – freundlich, hell, nahbar.
+/* Hatnova Web & Consulting – freundlich, hell, nahbar.
    Markenfarben aus dem Logo (Gold + Anthrazit), aber auf hellem Grund statt Luxus-Schwarz. */
 :root{
   --bg:#FBF8F3; --bg-alt:#F4EEE4; --surface:#FFFFFF;
   --ink:#1A1D21; --ink-2:#434A54; --muted:#69717C; --line:#E8E0D2;
   --gold:#E3AC3F; --gold-hi:#F0C064; --gold-ink:#835A0C; --tint:#FCF1DA;
-  --dark:#17191C; --dark-2:#22252A;
+  --dark:#1B2137; --dark-2:#262D49; --serif:Georgia,"Times New Roman",serif;
   --green:#1E7F55;
   --r:18px; --r-sm:12px;
   --shadow:0 1px 2px rgba(26,29,33,.05),0 8px 24px rgba(26,29,33,.06);
@@ -50,8 +50,8 @@ svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-widt
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand img{border-radius:10px}
 .brand-txt{display:flex;flex-direction:column;line-height:1.1}
-.brand-txt strong{font-size:17px;letter-spacing:.18em}
-.brand-txt small{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.brand-txt strong{font-family:var(--serif);font-size:23px;font-weight:700;letter-spacing:0;line-height:1}
+.brand-txt small{font-size:10px;color:var(--gold-ink);letter-spacing:.2em;font-weight:600;margin-top:3px}
 .nav{display:flex;gap:4px;margin-left:auto}
 .nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink-2);padding:8px 12px;border-radius:999px}
 .nav a:hover{background:var(--bg-alt);color:var(--ink)}
@@ -233,7 +233,7 @@ svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-widt
 .footer-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
 .footer-brand{display:flex;align-items:center;gap:12px}
 .footer-brand img{border-radius:8px}
-.footer-brand strong{display:block;color:#fff;letter-spacing:.16em}
+.footer-brand strong{display:block;color:#F7F3EA;font-family:var(--serif);font-size:21px;letter-spacing:0}
 .footer-links{display:flex;flex-wrap:wrap;gap:6px 20px}
 .footer-links a{text-decoration:none}
 .footer-links a:hover{color:#fff;text-decoration:underline}

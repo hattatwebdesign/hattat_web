@@ -41,4 +41,4 @@ Technik: eigene URL pro Sprache, `hreflang`, Canonical, Schema.org (Professional
 - **Impressum:** vollständiger Name + Strasse/PLZ fehlen (Pflichtangaben nach § 5 DDG) – siehe `TODO` in `impressum.html` und `datenschutz.html`.
 - Leistungsversprechen prüfen: „klares Angebot vorab, keine versteckten Kosten“, „Google-Unternehmensprofil“, „WhatsApp-Button“.
 - Projekte (İZ Mannheim, Kebapçızade): Links zu den Live-Seiten und echte Screenshots ergänzen, sobald verfügbar.
-- Nach dem Livegang: Google Search Console einrichten und `sitemap.xml` einreichen; Google-Unternehmensprofil für Hattat anlegen.
+- Nach dem Livegang: Google Search Console einrichten und `sitemap.xml` einreichen; Google-Unternehmensprofil für Hatnova anlegen.

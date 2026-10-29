@@ -1,4 +1,4 @@
-/* Hattat – Seitenlogik: Menü, Sprachwahl merken, Sprachhinweis, Lösungsfinder, Animationen */
+/* Hatnova – Seitenlogik: Menü, Sprachwahl merken, Sprachhinweis, Lösungsfinder, Animationen */
 (function () {
   "use strict";
   var d = document, html = d.documentElement, LANG = html.lang;
@@ -11,7 +11,7 @@
       if (/^(\.\.?\/)+$|\/$/.test(h) && !/^[a-z]+:/i.test(h)) a.setAttribute("href", h + "index.html");
     });
   }
-  var Geo = window.HattatGeo;
+  var Geo = window.HatnovaGeo;
 
   // ---- Mobile Menü ------------------------------------------------------
   var burger = d.getElementById("burger"), nav = d.getElementById("nav");
